@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+.menu {
+  display: block; /* Display the hamburger icon on mobile */
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 10px;
+  background: #fdfcfc; 
+  margin: 5px auto;
+  transition: 0.4s;
+}
+
+/* Styles when the menu is open */
+.menu.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+}
